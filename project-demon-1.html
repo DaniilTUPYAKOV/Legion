@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="pr_style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Daniels project demon 1 page</title>
+</head>
+<body id="1" class="history-page">
+  <header class="position-relative">
+    <nav class="navbar navbar-expand-lg">
+      <a class="d-lg-none position-absolute top-0 start-50 translate-middle-x" href="index.html">
+        <img src="LOGO3.svg" style="margin-top: 0.5rem;">
+      </a>
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">
+          <img src="home.svg" style="margin-top: -0.2rem; height: 25px;">
+        </a>
+        <a class="navbar-brand d-none d-lg-block" href="index.html">
+          <img src="LOGO3.svg" style="margin-top: -0.2rem;">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="menu.svg" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> О нас</a>
+            </li>
+            <li class="nav-item">
+              <div class="d-flex justify-content-start">
+                <button type="button" class="btn px-0 btn-registration mx-lg-2" data-bs-toggle="modal" data-bs-target="#exampleModalregister">
+                  Зарегистрироваться</button>
+              </div>
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal fade" id="exampleModalregister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content justify-content-center pb-4">
+                      <div class="modal-header" style="border: 0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="d-flex justify-content-center">
+                          <h5 class="mb-3"> Регистрация </h5>
+                        </div>
+                        <div class="d-flex justify-content-center px-5">
+                          <form method="get">
+                            <div class="mb-3">
+                              <label for="NAME" class="form-label">Придумайте имя пользователя</label>
+                              <input type="text" class="form-control" id="NAME" aria-describedby="NAME">
+                            </div>
+                            <div class="mb-3">
+                              <label for="TELEPHONE" class="form-label">Введите адрес электронной почты</label>
+                              <input type="email" class="form-control" id="TELEPHONE">
+                            </div>
+                            <div class="mb-3">
+                              <label for="PASSWORD_1" class="form-label">Придумайте пароль</label>
+                              <input type="password" class="form-control" id="PASSWORD_1">
+                            </div>
+                            <div class="mb-3">
+                              <label for="PASSWORD_2" class="form-label">Повторите пароль</label>
+                              <input type="password" class="form-control" id="PASSWORD_2">
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center pb-3">
+                        <button type="button" class="btn btn-secondary btn-modal-reg-sign" data-bs-dismiss="modal">Зарегистрироваться</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="d-flex justify-content-start">
+                <button type="button" class="btn px-0 btn-registration mx-lg-2" data-bs-toggle="modal" data-bs-target="#exampleModalsignIn">
+                  Войти</button>
+              </div>
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal fade" id="exampleModalsignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content justify-content-center pb-4">
+                      <div class="modal-header" style="border: 0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="d-flex justify-content-center">
+                          <h5 class="mb-3"> Вход </h5>
+                        </div>
+                        <div class="d-flex justify-content-center px-5">
+                          <form method="get">
+                            <div class="mb-3">
+                              <label for="NAME" class="form-label">Введите имя пользователя</label>
+                              <input type="text" class="form-control" id="USERNAME" aria-describedby="NAME">
+                            </div>
+                            <div class="mb-3">
+                              <label for="PASSWORD_1" class="form-label">Введите пароль</label>
+                              <input type="password" class="form-control" id="PASSWORD">
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center pb-3">
+                        <button type="button" class="btn btn-secondary btn-modal-reg-sign" data-bs-dismiss="modal">Войти</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h1>Первый Демон</h1>
+  <main class="d-flex flex-column flex-lg-row-reverse justify-content-lg-between align-content-lg-center position-relative px-lg-5 pb-5">
+    <section class="overflow-hidden sticky-top px-lg-1">
+      
+      <div id="carouselExampleIndicators" class="carousel slide p-3" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active ">
+            <div class="d-flex justify-content-center">
+              <img src="demon-1-end.jpg" class="d-block big-heigth-2"   alt="...">
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center ">
+              <img src="demon-1-start.jpg" class="d-block big-heigth-2 "  alt="...">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-between align-content-lg-center position-relative">
+      <article>
+        <p id="history-holder" class="px-4 py-3 p-lg-3 m-0 text-size-change">
+          Это поле истории! Вперед, выбирайте раздел!
+        </p>
+      </article>
+      <div class="pre-row overflow-hidden sticky-bottom px-2 px-lg-0 m-0 d-lg-flex justify-content-center">
+        <div class=" row row-cols-4 row-cols-lg-1 button-row">
+          <div class="col p-0 button-holder">
+            <button id="btn-location" class="history-nav d-flex flex-column p-2 btn-history-nav-inactive" onclick="Change(this)">
+              <span class="d-flex flex-column justify-content-center">
+                <img id="location-img" src="location_light.svg">
+                <span>Локация</span>
+              </span>
+            </button>
+          </div>
+          <div class="col p-0 button-holder">
+            <button id="btn-person" class="history-nav d-flex flex-column p-2 btn-history-nav-inactive" onclick="Change(this)">
+              <span class="d-flex flex-column justify-content-center">
+                <img id="person-img" src="person_light.svg">
+                <span>Персонажи</span>
+              </span>
+            </button>
+          </div>
+          <div class="col p-0 button-holder">
+            <button id="btn-history" class="history-nav d-flex flex-column p-2 btn-history-nav-inactive" onclick="Change(this)">
+              <span class="d-flex flex-column justify-content-center">
+                <img id="history-img" src="history_light.svg">
+                <span>История</span>
+              </span>
+            </button>
+          </div>
+          <div class="col p-0 button-holder">
+            <button id="btn-equipment" class="history-nav d-flex flex-column p-2 btn-history-nav-inactive" onclick="Change(this)">
+              <span class="d-flex flex-column justify-content-center">
+                <img id="equipment-img" src="equipment_light.svg">
+                <span>Материалы</span>
+              </span>
+            </button>
+          </div>
+          <div class="d-none d-lg-flex px-0 py-0 justify-content-between size-holder" style="height: 11%;">
+            <button id="btn-plus-size" class="history-nav-size d-flex flex-column justify-content-center p-0 " onclick="ChangeSize(this)">
+              <span class="d-flex flex-column justify-content-center">
+                <img src="plus.svg" style="width: 100%; height: auto">
+              </span>
+            </button>
+            <button id="btn-minus-size" class="history-nav-size d-flex flex-column justify-content-center p-0 " onclick="ChangeSize(this)">
+              <span class="d-flex flex-column justify-content-center">
+                <img src="minus.svg" style="width: 100%; height: auto">
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="d-flex justify-content-center mt-5 mt-lg-0">
+    <div class="d-flex justify-content-between" style="width: 200px;">
+      <h2>Еще от</h2>
+      <a class="navbar-brand" href="index.html">
+        <img src="LOGO3.svg" style="margin-top: -0.5rem;">
+      </a>
+    </div>
+  </div>
+  <hr>
+  <aside class="pb-3">
+    <div class="overflow-hidden">
+      <div class="row px-3 px-lg-5"> 
+        <div class="col-12 col-md-4 col-lg-3 p-2 card-holder" >
+          <a href="projject-space.html">
+            <div class="card">
+              <div class="img-holder">
+                <img src="space-main.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Возвращение домой</h5>
+                <p class="card-text">Классическая история о далеком будущем, где развитие технолгий привело к выходу человечества за пределы солнечной системы.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 p-2 card-holder" >
+          <a href="project-demon-2.html">
+            <div class="card">
+              <div class="img-holder">
+                <img src="demon-2-end.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Воторой демон</h5>
+                <p class="card-text">История о зарождении второго демона. Продолжение истории первого демона.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 p-2 card-holder" >
+          <a href="project-port.html">
+            <div class="card">
+              <div class="img-holder">
+                <img src="port.jpg" style="transform: translateY(-0%) ;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Вечер в крымском порту</h5>
+                <p class="card-text">Небольшая история, происходящая в крымском порту на фоне заката теплым летним вечером.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 p-2 card-holder" >
+          <a href="project-legion.html">
+            <div class="card">
+              <div class="img-holder">
+                <img src="legion.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Легион</h5>
+                <p class="card-text">История о том как зародился великий Легион. Истории участников до объединения, происшествия в мире и истинная причина образования Легиона. </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <footer class="history-page d-flex justify-content-center">
+    <div class="col-6 col-lg-2 d-flex justify-content-between">
+      <a href="#" class="d-flex content-align-center">
+        <img src="telegram2.svg">
+      </a>
+      <a href="#" class="d-flex content-align-center">
+        <img src="instagram2.svg">
+      </a>
+      <a href="#" class="d-flex content-align-center">
+        <img src="mail2.svg">
+      </a>
+    </div>
+  </footer>
+  <script src="history_holder.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="pr_scripts.js"></script>
+</body>
+</html>
